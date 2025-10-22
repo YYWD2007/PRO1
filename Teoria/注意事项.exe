@@ -1,0 +1,98 @@
+-   time complexity
+    !!! divisors in order(jutge)(seq 1) !!! tobogans !!! Exparcial_anterior, torn1, cuarto!!! mcd !!!
+
+
+
+- Comprobar con sample
+ll
+cat P6.../sample-1.inp
+./Control_C202F < P32046_ca/sample-1.inp
+
+
+
+- Input consists of several pairs of integer numbers a and b
+while(cin >> a >> b) .../...
+while(cin>>x) // 无限接收，ctrl + d 结束并输出
+
+
+
+-   char x;
+    int i=0;
+    cin >> x;    // cin primero fuera, para comparar
+    while(x!='.'){ 
+        if(x=='a'){
+            i++;
+        }
+        cin >> x; // 继续接收，有句号的时候，跳出循环
+    }
+    cout << i << endl;
+
+
+
+-   int x;
+    int i=0, k=-1;
+    while(cin>>x && i!=k){ // ponemos esto o quitamos y ponemos break despues de k=i
+        i++;
+        if(x%2==0){
+            k = i;
+        }
+    }
+    cout << k << endl;
+
+
+
+-   string str;
+    cin >> str;
+    只接收空格之前的...
+
+
+
+-   Jutge - Funcions - Swap!!!clock.cc ! (&)
+    
+
+
+-   int 转换一个char 是asc码，比如：int（char（‘1’））不是1。
+    所以要减去‘0’ 这样就是原本看到的数字了。
+
+
+
+-   c math 的sin 和 cos 要把角度转成radians 才能得到正确答案
+    可以得到计算机普通角度的sen(Jutge_Funcions_Trigometria)
+
+
+
+-   char 在 cin 的时候只读取一个字母. 然后就结束 不管有没有空格。string读取到空格结束
+
+
+
+-   Leap years, traspas. 闰年是能被4整除但同时不能被100整除，或者能被400整除。
+    闰年2月有29天，平年28天
+    // if(y%4==0 && y%100!=0) {0 < d <= 29? date=true: date=false;}
+    c++ 不能这么写， 整个表达式就变成了用第一步的 0 或 1 来和 30 比较。
+
+
+
+-   bool date = true;
+    int d;
+    cin << d;
+    date = (d<=29); // 可以这么写，写date=false,不要写!date.
+
+
+
+-   int main(){ 
+    int n, numbers;
+    while(cin>>n){
+        int count=0;
+        int sum=0;
+        while(count<n && cin>>numbers){ // 要把条件写在前面，这样就不会在不满足条件的情况下多接收一个数字了，虽然不会执行...
+            sum += numbers;
+            count++;
+        }
+        cout << sum << endl;
+        }
+    }
+
+
+
+-   “转义字符”（escape character）——反斜杠 \ 来实现。
+    std::cout << "\"sadfasdf\"" << std::endl;

@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int f(int x)
+{   
+    if(x==0) return 0;
+    return x + f(x-1);
+}
+
+/*
+* 3+f(2)
+*    2+f(1)
+*       1+f(0)
+*           0
+*/
+
+int main() 
+{
+    cout << "f(3)=" << f(100) << endl;
+
+    int sum=0;
+    int i=1;
+    while(i<=100){
+        sum += i;
+        i++;
+    }
+    cout << sum << endl;
+
+    sum=0;
+    for(i=1; i<=100; i++){
+        sum+=i;
+    }
+    cout << sum << endl;
+}
