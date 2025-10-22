@@ -96,3 +96,29 @@ while(cin>>x) // 无限接收，ctrl + d 结束并输出
 
 -   “转义字符”（escape character）——反斜杠 \ 来实现。
     std::cout << "\"sadfasdf\"" << std::endl;
+
+
+
+-   Cerca i Recorregut 
+    Cerca:
+    bool sequencia_creixent(){
+        int n;
+        int pre=-1;                      Recorregut: bool creixent = true;
+        while(n!=-1 && cin>>n){                      ...      
+            if(pre>n && pre!=-1){          
+                return false;                        creixent = false;
+            }
+            pre = n;                                 ...
+        }
+        return true;                                 return creixent;
+    }
+
+
+
+-   把一个数字倒过来和识别数字个数:
+    int n, count=0, n_reverse=0;
+    cin >> n;
+    for(int k=n; k>0; k/=10){
+        n_reverse = n_reverse*10 + k%10;
+        count++;
+    }
