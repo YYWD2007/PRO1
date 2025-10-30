@@ -105,7 +105,7 @@ while(cin>>x) // 无限接收，ctrl + d 结束并输出
     bool sequencia_creixent(){
         int n;
         int pre=-1;                      Recorregut: bool creixent = true;
-        while(n!=-1 && cin>>n){                      ...      
+        while(cin>>n && n!=-1){                      ...      
             if(pre>n && pre!=-1){          
                 return false;                        creixent = false;
             }
@@ -123,3 +123,7 @@ while(cin>>x) // 无限接收，ctrl + d 结束并输出
         n_reverse = n_reverse*10 + k%10;
         count++;
     }
+
+
+
+-   (x+y)%10 suma de base 10

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void print(int x);
+void print3(int x);
 
 int main() {
     double x=21.150000;
