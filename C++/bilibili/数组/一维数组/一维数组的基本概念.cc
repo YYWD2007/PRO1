@@ -2,9 +2,7 @@
 #include <cstring>  
 using namespace std;
 
-/* 数组是一组类型相同的变量，可以存放一组数据
-
-*/
+// 数组是一组类型相同的变量，可以存放一组数据
 
 int main(){
     int bh[8];
