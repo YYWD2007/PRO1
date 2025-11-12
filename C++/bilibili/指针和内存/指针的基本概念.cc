@@ -22,5 +22,6 @@ int main(){
     cout << "变量a的地址是: " << (long long)&b << endl; 
     // (类型) 变量 - 强制转换， & 查询变量储存地址
     cout << "变量a的地址是: " << (long long)pb << endl;
-    cout << sizeof(pb) << endl;
+    cout << sizeof(pb) << endl; // 指针变量都是8个字节（64位操作系统）
 }
+
