@@ -3,11 +3,11 @@ using namespace std;
 
 int cal_prefx_exp(){
     char ch;
-    if(!(cin>>ch)) return 0;
+    cin >> ch;
     if(ch=='+') return cal_prefx_exp() + cal_prefx_exp();
     else if(ch=='-') return cal_prefx_exp() - cal_prefx_exp();
     else if(ch=='*') return cal_prefx_exp() * cal_prefx_exp();
-    return int(ch) - int('0');
+    else return int(ch) - int('0');
 }
 
 int main(){
